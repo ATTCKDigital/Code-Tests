@@ -1,0 +1,23 @@
+.characters {
+  padding: 3em 0 3em;
+}
+
+.characters ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 1024px) {
+  .characters ul {
+    width: 100%;
+  }
+  .characters li {
+    width: 100%;
+  }
+  .button {
+    width: 600px;
+  }
+}

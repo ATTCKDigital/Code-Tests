@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Univers Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Univers Condensed Bold'), local('Univers-Condensed-Bold'),
+    url(./assets/fonts/UniversBoldCondensed.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Univers Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Univers Condensed Medium'), local('Univers-Condensed-Medium'),
+    url(./assets/fonts/UniversMediumCondensed.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Univers Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button,
+button,
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #bbb;
+  text-align: center;
+  font-family: 'Univers Condensed', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.button:hover,
+button:hover,
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='button']:hover,
+.button:focus,
+button:focus,
+input[type='submit']:focus,
+input[type='reset']:focus,
+input[type='button']:focus {
+  color: #fccd06;
+  border-color: #fccd06;
+  outline: 0;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+@media screen and (max-width: 1024px) {
+  .button,
+  button,
+  input[type='submit'],
+  input[type='reset'],
+  input[type='button'] {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
